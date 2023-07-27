@@ -42,9 +42,9 @@
 
            
 
-            <div class="navbar md:bg-base-100 md:bg-[#F85559] md:rounded-full lg:px-12 py-8 ">
+            <div class="navbar md:bg-base-100 md:bg-[#F85559] md:rounded-full lg:px-12 py-8 flex justify-between ">
 
-                    <div class="navbar-start">
+                    <div class="navbar-start hidden lg:block">
 
                         <!-- dropdown er bairer menu gula -->
     
@@ -59,25 +59,7 @@
     
     
     
-                        <div class="dropdown lg:hidden">
-                            <label tabindex="0" class="btn btn-ghost  visible">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M4 6h16M4 12h8m-8 6h16" />
-                                </svg>
-                            </label>
-                            <ul tabindex="0"
-                                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 ">
-                                <li><a>Home</a></li>
-                                <li>
-                                    <a>About Us</a>
-                                </li>
-                                <li><a>Shop</a></li>
-                                <li><a>All Fruits</a></li>
-                            </ul>
-    
-                        </div>
+                        
                     </div>
     
                     <!-- nav center -->
@@ -94,6 +76,28 @@
                     <input class="rounded-full p-2" type="text" placeholder="search here">
                     <button class="absolute  mr-2" type="submit"><img src="./images/search icon.svg" alt=""></button>
                 </div>
+
+                <!-- lksdiewoi -->
+                <div class="dropdown lg:hidden">
+                    <label tabindex="0" class="btn btn-ghost  visible">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] py-2 shadow bg-base-100 rounded-box w-auto relative ">
+                        <li><a>Home</a></li>
+                        <li>
+                            <a>About Us</a>
+                        </li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+
+                </div>
+
             </div>
         </nav>
 
@@ -101,7 +105,7 @@
 
         <section class="max-w-[1440px] mx-auto my-12"> <!--absolute-->
 
-            <div class="carousel w-full  ">
+            <div class="carousel w-full ">
                 <!-- slide 1 -->
                 <!-- <div id="slide1" class="carousel-item relative w-full"> -->
 
@@ -223,12 +227,6 @@
             </div>
 
 
-            <!-- <div class="text-center space-y-10">
-                <h1 class="text-7xl font-lato font-extrabold text-[#FFFFFF]">Exotic tastes at your doorstep</h1>
-            <p class="text-xl text-[#FFFFFF] font-lato font-medium">We supply highly quality organic products</p>
-            <button class="btn btn-error text-[#FFFFFF]">Shop Now</button>
-            </div> -->
-
         </section>
 
 
@@ -241,56 +239,18 @@
     <main class="max-w-[1440px] mx-auto my-24">
 
         <!-- deal of the day -->
-        <!-- <div class="hero justify-between ">
-        <div class="hero-content flex-col lg:flex-row lg:space-x-80 sm:space-y-8">
-            
-            <div class="flex-1 space-y-4 justify-center">
-                <h1 class="text-5xl font-lato font-extrabold text-[#121212]">Deal of the day</h1>
-                <p class="text-xl font-lato font-medium text-[#2f2c2c99]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
-            </div>
-
-            <div class="flex justify-items-end space-x-4">
-                
-                <div class="">
-                    <h1 class="text-5xl font-lato font-bold ">29</h1>
-                    <p class="text-center">Day</p>
-                </div>
-                <div class="pt-[12px]">
-                    <img src="./images/dotted.svg" alt="">
-                </div>
-                <div class="">
-                    <h1 class="text-5xl font-lato font-bold">29</h1>
-                    <p class="text-center">Day</p>
-                </div>
-                <div class="pt-[12px]">
-                    <img src="./images/dotted.svg" alt="">
-                </div> 
-                <div class="">
-                    <h1 class="text-5xl font-lato font-bold">29</h1>
-                    <p class="text-center">Day</p>
-                </div>
-                <div class="pt-[12px]">
-                    <img src="./images/dotted.svg" alt="">
-                </div>
-                <div class="">
-                    <h1 class="text-5xl font-lato font-bold">29</h1>
-                    <p class="text-center">Day</p>
-                </div>
-            </div>
-        </div>
-      </div> -->
+    
 
         <section>
             <div class="grid grid-cols-1 sm:grid-cols-2 justify-center mx-auto ">
-                <div class="lg:flex-1 mx-auto justify-center  space-y-4">
+                <div class="lg:flex-1 mx-auto justify-center  space-y-4 text-center sm:text-left">
                     <h1 class="text-5xl font-lato font-extrabold text-[#121212]">Deal of the day</h1>
-                    <p class="text-xl font-lato font-medium text-[#2f2c2c99]">Contrary to popular belief, is not simply
+                    <p class="text-xl font-lato font-medium text-[#2f2c2c99] ">Contrary to popular belief, is not simply
                         random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it
                         over 2000 years old.</p>
                 </div>
 
-                <div class="flex md:justify-end mx-auto space-x-4
-                ">
+                <div class="flex  justify-end md:justify-end mx-auto space-x-4">
 
                     <div class="">
                         <h1 class="text-5xl font-lato font-bold ">29</h1>
@@ -798,7 +758,7 @@
                     2000 years old.</p>
             </div>
 
-            <div class=" grid  grid-cols-1 sm:grid-cols-3  space-x-6">
+            <div class=" grid  grid-cols-1 md:grid-cols-3  space-x-6">
                 <div class=" space-y-6  justify-center order-1 md:order-0 mx-auto ">
 
                     <div class="flex flex-col md:flex-row gap-3  items-center">
@@ -806,7 +766,7 @@
                             <img class="sm:order-1  bg-slate-100 p-4 rounded-full h-18 w-28"
                                 src="./images/group 1.svg" alt="">
                         </div>
-                        <div class="content-center">
+                        <div class="justify-center sm:justify-start">
                             <h1 class="text-xl font-lato text-[black] font-extrabold">Dedicated Team</h1>
                             <div class="divider h-[1px] w-28 bg-black"></div>
                             <p class="text-[16px] font-laot font-medium text-[#47414199]">Professional employees are
@@ -839,7 +799,7 @@
                     </div>
                 </div>
 
-                <div class="  order-0 md:order-1">
+                <div class="  order-0 md:order-1 mx-auto md:mx-auto justify-center">
                     <img src="./images/whychoose1.png" alt="">
                 </div>
 
